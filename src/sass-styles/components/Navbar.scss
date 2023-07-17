@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 10px;
+
+    .navbar-logo {
+        height: 68px;
+        margin-left: 0;
+
+        img {
+            width: 211px;
+        }
+    }
+    .acceuiletapropos {
+        display: flex;
+        gap: 80px;
+        font-size: 24px;
+
+        a {
+            color: #ff6060;
+            text-decoration: none;
+        }
+    }
+
+    @media screen and (max-width: 1000px){
+    
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+
+            img {
+                width: 150px;
+            }
+        }
+        .acceuiletapropos {
+            gap: 20px;
+            font-size: 16px;
+        }
+    }
+}
