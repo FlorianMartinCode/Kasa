@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5% 10px;
+    margin: 0 5% 10px;
 
     .navbar-logo {
         height: 68px;
@@ -28,13 +28,14 @@
         .navbar-logo {
             display: flex;
             align-items: center;
+            width: 40%;
 
             img {
                 width: 150px;
             }
         }
         .acceuiletapropos {
-            gap: 20px;
+            gap: 30px;
             font-size: 16px;
         }
     }

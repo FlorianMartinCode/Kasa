@@ -1,7 +1,6 @@
 .banner {
-    padding: 0 5%;
-    margin: 0;
-    // box-sizing: border-box;
+    margin: 0 5%;
+    margin-bottom: 32px;
 
     img {
         width: 100%;
@@ -27,7 +26,6 @@
         img {
             height: 111px;
             object-position: 50% 30%;
-            // transform: scale(2);
         }
 
         .banner-title {

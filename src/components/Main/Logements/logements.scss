@@ -1,0 +1,29 @@
+.logements {
+    display: flex;
+    height: 775px;
+    background-color: #f6f6f6;
+    margin: 0 5%;
+    padding: 30px 30px;
+    border-radius: 25px;
+    gap: 0 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+
+    .title {
+        margin: 0 0 10px 10px;
+        font-family: 'Monsterrat';
+        font-size: 18px;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .logements {
+        height: auto;
+        background-color: #fff;
+        gap: 50px;
+        padding: 0;
+    }
+}
