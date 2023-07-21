@@ -22,18 +22,6 @@ body {
   gap: 80px;
   font-size: 24px;
 }
-.navbar .acceuiletapropos a {
-  color: #ff6060;
-  text-decoration: none;
-  width: auto;
-  height: auto;
-}
-.navbar .acceuiletapropos a:hover {
-  text-decoration: underline;
-}
-.navbar .acceuiletapropos a.active-link {
-  text-decoration: underline;
-}
 @media screen and (max-width: 1000px) {
   .navbar .navbar-logo {
     display: flex;
@@ -59,7 +47,6 @@ body {
   border-radius: 25px;
   object-fit: cover;
   filter: brightness(0.6);
-  cursor: pointer;
 }
 .banner .banner-title {
   position: absolute;
@@ -70,7 +57,6 @@ body {
   font-size: 48px;
   font-family: "Montserrat";
   width: 90%;
-  cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
   .banner img {
@@ -114,28 +100,23 @@ body {
     padding: 0;
   }
 }
-a {
-  width: 30%;
-  height: 340px;
-  text-decoration: none;
-}
-a .logement {
+.logement {
   background: linear-gradient(180deg, #ff6060 0%, rgba(0, 0, 0, 0.8) 150%);
-  width: 100%;
+  width: 30%;
   height: 340px;
   border-radius: 10px;
   color: #fff;
   display: flex;
   flex-direction: column-reverse;
-  cursor: pointer;
+}
+.logement link {
+  color: #ff6060;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1000px) {
-  a {
+  .logement {
     width: 100%;
-    height: 255px;
-  }
-  a .logement {
     height: 255px;
   }
 }
@@ -152,7 +133,6 @@ a .logement {
 .footer .copyright {
   color: #fff;
   margin: 20px auto 0 auto;
-  cursor: default;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.cs.map */

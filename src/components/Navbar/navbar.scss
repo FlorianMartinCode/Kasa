@@ -20,6 +20,15 @@
         a {
             color: #ff6060;
             text-decoration: none;
+            width: auto;
+            height: auto;
+
+            &:hover {
+                text-decoration: underline;
+            }
+            &.active-link {
+                text-decoration: underline; // A vérifier
+            }
         }
     }
 
