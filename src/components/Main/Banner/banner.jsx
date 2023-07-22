@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Banner({ imageSrc, showText }) {
+function Banner({ imageSrc, showText, heightResponsive }) {
   return (
     <div className='banner'>
-        <img src={imageSrc} alt="" />
+        <img src={imageSrc} alt="" style={{ height: heightResponsive }} />
         {showText && <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>}
     </div>
   )

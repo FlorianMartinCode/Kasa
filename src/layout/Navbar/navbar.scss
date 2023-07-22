@@ -5,16 +5,11 @@
     margin: 0 5% 10px;
 
     a {
-        width: auto;
         height: auto;
 
         .navbar-logo {
             height: 68px;
             margin-left: 0;
-    
-            img {
-                width: 211px;
-            }
         }
     }
 
@@ -41,16 +36,22 @@
     }
 
     @media screen and (max-width: 1000px){
-    
-        .navbar-logo {
-            display: flex;
-            align-items: center;
-            width: 40%;
+        margin: 0 5% 0;
 
-            img {
-                width: 150px;
+        a {
+            width: 145px;
+
+            .navbar-logo {
+                display: flex;
+                align-items: center;
+                width: 40%;
+    
+                img {
+                    width: 145px;
+                }
             }
         }
+        
         .acceuiletapropos {
             gap: 30px;
             font-size: 16px;
