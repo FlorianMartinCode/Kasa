@@ -8,7 +8,6 @@
         border-radius: 25px;
         object-fit: cover;
         filter: brightness(0.6);
-        cursor: pointer;
     }
 
     .banner-title {
@@ -20,7 +19,7 @@
         font-size: 48px;
         font-family: 'Montserrat';
         width: 90%;
-        cursor: pointer;
+        cursor: default;
     }
 
     @media screen and (max-width: 1000px){

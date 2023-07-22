@@ -10,6 +10,20 @@ function logements() {
       <Logement />
       <Logement />
       <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
+      <Logement />
     </div>
   )
 }

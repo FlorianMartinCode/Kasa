@@ -4,14 +4,20 @@
     align-items: center;
     margin: 0 5% 10px;
 
-    .navbar-logo {
-        height: 68px;
-        margin-left: 0;
+    a {
+        width: auto;
+        height: auto;
 
-        img {
-            width: 211px;
+        .navbar-logo {
+            height: 68px;
+            margin-left: 0;
+    
+            img {
+                width: 211px;
+            }
         }
     }
+
     .acceuiletapropos {
         display: flex;
         gap: 80px;
@@ -24,10 +30,12 @@
             height: auto;
 
             &:hover {
-                text-decoration: underline;
+                text-decoration: underline; 
             }
-            &.active-link {
-                text-decoration: underline; // A vérifier
+
+            &.active,
+            &:active {
+                text-decoration: underline;
             }
         }
     }

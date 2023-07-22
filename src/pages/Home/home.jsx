@@ -1,20 +1,14 @@
-import React from 'react'
-import Navbar from '../../components/Navbar/navbar';
-import Main from '../../components/Main/main';
+import React from 'react';
 import Banner from '../../components/Main/Banner/banner';
+import image1 from '../../assets/banner.png';
 import Logements from '../../components/Main/Logements/logements';
-import Footer from '../../components/Footer/footer';
 
 
 function home() {
     return (
         <div>
-            <Navbar />
-            <Main>
-                <Banner />
-                <Logements />
-            </Main>
-            <Footer />
+            <Banner imageSrc={image1} showText={true}/>
+            <Logements />
         </div>
       )
 }

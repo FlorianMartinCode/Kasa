@@ -10,11 +10,15 @@ body {
   align-items: center;
   margin: 0 5% 10px;
 }
-.navbar .navbar-logo {
+.navbar a {
+  width: auto;
+  height: auto;
+}
+.navbar a .navbar-logo {
   height: 68px;
   margin-left: 0;
 }
-.navbar .navbar-logo img {
+.navbar a .navbar-logo img {
   width: 211px;
 }
 .navbar .acceuiletapropos {
@@ -31,7 +35,7 @@ body {
 .navbar .acceuiletapropos a:hover {
   text-decoration: underline;
 }
-.navbar .acceuiletapropos a.active-link {
+.navbar .acceuiletapropos a.active, .navbar .acceuiletapropos a:active {
   text-decoration: underline;
 }
 @media screen and (max-width: 1000px) {
@@ -59,7 +63,6 @@ body {
   border-radius: 25px;
   object-fit: cover;
   filter: brightness(0.6);
-  cursor: pointer;
 }
 .banner .banner-title {
   position: absolute;
@@ -70,7 +73,7 @@ body {
   font-size: 48px;
   font-family: "Montserrat";
   width: 90%;
-  cursor: pointer;
+  cursor: default;
 }
 @media screen and (max-width: 1000px) {
   .banner img {
@@ -88,12 +91,11 @@ body {
 
 .logements {
   display: flex;
-  height: 775px;
   background-color: #f6f6f6;
   margin: 0 5%;
   padding: 30px 30px;
   border-radius: 25px;
-  gap: 0 5%;
+  gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

@@ -1,11 +1,10 @@
-import React from 'react'
-import banner from '../../../assets/banner.png'
+import React from 'react';
 
-function Banner() {
+function Banner({ imageSrc, showText }) {
   return (
     <div className='banner'>
-        <img src={banner} alt="" />
-        <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>
+        <img src={imageSrc} alt="" />
+        {showText && <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>}
     </div>
   )
 }
