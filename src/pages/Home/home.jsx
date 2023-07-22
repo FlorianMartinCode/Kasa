@@ -3,14 +3,17 @@ import Banner from '../../components/Main/Banner/banner';
 import image1 from '../../assets/banner.png';
 import Logements from '../../components/Main/Logements/logements';
 
-
-function home() {
-    return (
-        <div>
-            <Banner imageSrc={image1} showText={true}/>
-            <Logements />
-        </div>
-      )
+function Home() {
+  return (
+    <div>
+      <Banner
+        imageSrc={image1}
+        showText={true}
+        imageHeightDesktop="223px"
+        imageHeightResponsive="111px"
+      />
+      <Logements />
+    </div>
+  );
 }
-
-export default home
+export default Home
