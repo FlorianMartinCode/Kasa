@@ -9,15 +9,16 @@ import {
 // Import Pages
 import Home from './pages/Home/home';
 import About from './pages/About/about';
+import Error from './pages/Error/Error'
 
 // Import Style
 import "./style.css"
 
-// Import Layout
-import Navbar from './layout/Navbar/navbar';
-import Footer from './layout/Footer/footer';
+// Import Components
+import Navbar from './components/Navbar/navbar';
+import Footer from './components/Footer/footer';
 
-const HeaderFooterLayout = () => {
+const HeaderFooter = () => {
   return <>
   <Navbar />
   <Outlet />
@@ -27,8 +28,8 @@ const HeaderFooterLayout = () => {
 
 const router = createBrowserRouter([
   {
-    element: <HeaderFooterLayout />,
-    errorElement: <h1>404 not found</h1>,
+    element: <HeaderFooter />,
+    // errorElement: <Error />,
     children: [
       {
         path: '/',
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
       {
         path: '/about',
         element: <About />
-      }
+      },
+      {
+        path: '*',
+        element: <Error />
+      },
     ],
   },
 ]);

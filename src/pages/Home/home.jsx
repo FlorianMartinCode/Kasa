@@ -9,11 +9,11 @@ function Home() {
       <Banner
         imageSrc={image1}
         showText={true}
-        imageHeightDesktop="223px"
-        imageHeightResponsive="111px"
+        className="image-height-1"
       />
       <Logements />
     </div>
   );
 }
-export default Home
+
+export default Home;

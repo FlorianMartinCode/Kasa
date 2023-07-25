@@ -8,10 +8,7 @@ function About() {
       <Banner
         imageSrc={image2}
         showText={false}
-        imageHeightDesktop="223px"
-        imageHeightResponsive="223px"
       />
-      {/* ... autres composants ... */}
     </div>
   );
 }
