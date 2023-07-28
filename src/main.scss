@@ -6,6 +6,13 @@
 // Styles components
 @import './components/Navbar/navbar.scss';
 @import './components/Main/Banner/banner.scss';
+@import './components/Main/DropDown/dropdown.scss';
 @import './components/Main/Logements/logements.scss';
 @import './components/Main/Logements/Logement/card.scss';
 @import './components/Footer/footer.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
