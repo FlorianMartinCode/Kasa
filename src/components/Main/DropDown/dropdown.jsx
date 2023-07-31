@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import expandArrowImg from '../../../assets/expand_arrow.png';
+import expandArrowImg from '../../../assets/expand_down.png';
 import expandUpImg from '../../../assets/expand_up.png';
 
 function Dropdown() {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Card ({ id,cover,title }) {
   return (
-    <Link to= {`/card/${id}`} >
+    <Link to= {`/location/${id}`} >
       <figure className='logement'>
         <img className='card-img' src={cover} alt="" />
         <figcaption className='title'>{title}</figcaption>
