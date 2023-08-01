@@ -125,10 +125,7 @@
     text-align: start;
   }
 }
-.dropdown-container {
-  margin: 0 5%;
-}
-.dropdown-container .dropdown {
+.dropdown {
   min-height: 52px;
   height: auto;
   display: flex;
@@ -136,7 +133,7 @@
   justify-content: center;
   margin: 30px 5%;
 }
-.dropdown-container .dropdown .label-container {
+.dropdown .label-container {
   color: #fff;
   font-size: 24px;
   font-weight: 500;
@@ -147,8 +144,12 @@
   background-color: #FF6060;
   border-radius: 5px;
   justify-content: space-between;
+  cursor: pointer;
 }
-.dropdown-container .dropdown p {
+.dropdown .label-container label {
+  cursor: pointer;
+}
+.dropdown .description-dropdown {
   background-color: #F6F6F6;
   margin: 0;
   padding: 15px;
