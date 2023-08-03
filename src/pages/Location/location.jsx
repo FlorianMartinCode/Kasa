@@ -1,11 +1,20 @@
 import React from 'react';
 import locationDatas from '../../Data/logements.json';
-import Logements from '../../components/Main/Logements/logements'
+import Logement from '../../components/Main/Logement/logement';
+import { useParams } from 'react-router-dom';
+import Error from '../../pages/Error/Error';
 
 function Location () {
+
+    const { id } = useParams();
+
+    const dataLocation = locationDatas.find((location) => location.id === id);
+    if (!dataLocation) {
+        return (<Error />)
+    }
     return (
         <div>
-            <Logements data={locationDatas} mode="full"/>
+            <Logement logement={dataLocation} mode="full"/>
         </div>
     );
 };

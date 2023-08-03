@@ -14,8 +14,6 @@ import "./style.css";
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 
-// import locationDatas from './Data/logements.json';
-
 const HeaderFooter = () => {
   return (
     <>
