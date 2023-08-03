@@ -1,20 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import Slide from '../../components/Main/Slide/slide';
 import locationDatas from '../../Data/logements.json';
-import Error from '../Error/Error'
+import Logements from '../../components/Main/Logements/logements'
 
-const Location = () => {
-    const { id } = useParams();
-  
-    const dataLocation = locationDatas.find((location) => location.id === id);
-    if (!dataLocation) {
-        return (<Error />)
-    }
-
+function Location () {
     return (
         <div>
-            <Slide dataLocation={dataLocation} />
+            <Logements data={locationDatas} mode="full"/>
         </div>
     );
 };

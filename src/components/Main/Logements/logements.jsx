@@ -1,20 +1,29 @@
 import React from 'react';
 import Card from '../Logements/Logement/card';
-import data from '../../../Data/logements.json';
+import Full from '../Logements/Logement/full';
 
-function logements() {
-  return (
-    <div className='logements'>
-      {data.map((logement) => (
-        <Card
+function logements({ data, mode }) {
+
+  if (mode === "card") {
+    return (
+      <div className='logements'>
+        {data.map((logement) => (
+          <Card 
           key={logement.id}
           id={logement.id}
           cover={logement.cover}
           title={logement.title}
-        />
-      ))}
-    </div>
-  );
+          />
+        ))}
+      </div>
+    );
+  } else if (mode === "full") {
+    return (
+      <div>
+          <Full />
+      </div>
+    );
+  }
 }
 
 export default logements;

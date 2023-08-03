@@ -14,7 +14,7 @@ import "./style.css";
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/footer';
 
-import locationDatas from './Data/logements.json';
+// import locationDatas from './Data/logements.json';
 
 const HeaderFooter = () => {
   return (
@@ -32,7 +32,7 @@ function Router() {
       <Routes>
         <Route path="/" element={<HeaderFooter />}>
           <Route index element={<Home />} />
-          <Route path="location/:id" element={<Location datas={locationDatas} />} />
+          <Route path="location/:id" element={<Location />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<Error />} />
         </Route>

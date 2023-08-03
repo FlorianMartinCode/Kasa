@@ -44,6 +44,7 @@
   margin: 0 5%;
 }
 .navbar a {
+  width: auto;
   height: auto;
 }
 .navbar a .navbar-logo {
