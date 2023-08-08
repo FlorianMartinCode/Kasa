@@ -11,7 +11,7 @@ import Location from './pages/Location/location';
 import "./style.css";
 
 // Import Components
-import Navbar from './components/Navbar/navbar';
+import Navbar from './components/Header/navbar';
 import Footer from './components/Footer/footer';
 
 const HeaderFooter = () => {

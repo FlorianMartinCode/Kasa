@@ -31,4 +31,37 @@
             right: 2%;
         }
     }
+
+    .nb-position {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 350px;
+        // left: 50%;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .slide .slide-location img {
+        height: 255px;
+    }
+
+    .slide .btn {
+
+        &.btn-left {
+            top: 35%;
+            left: 2%;
+        }
+
+        &.btn-right {
+            top: 35%;
+            right: 2%;
+        }
+    }
+
+    .nb-position {
+        display: none;
+    }
 }

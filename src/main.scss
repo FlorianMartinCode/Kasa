@@ -5,12 +5,14 @@
 @import './pages/Location/location.scss';
 
 // Styles components
-@import './components/Navbar/navbar.scss';
+@import './components/Header/navbar.scss';
 @import './components/Main/Banner/banner.scss';
 @import './components/Main/DropDown/dropdown.scss';
 @import './components/Main/Logement/logement.scss';
 @import './components/Main/Logement/Card/card.scss';
+@import './components/Main/Logement/Full/full.scss';
 @import './components/Main/Slide/slide.scss';
+@import './components/Main/Tag/tag.scss';
 @import './components/Footer/footer.scss';
 
 body {

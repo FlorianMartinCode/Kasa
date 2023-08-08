@@ -29,6 +29,7 @@ const Slide = ({dataLocation}) => {
             </figure>
             {picturesSlide ? <button className='btn btn-left' onClick={goToBack}><img src={chevronLeft} alt="" /></button> : null}
             {picturesSlide ? <button className='btn btn-right' onClick={goToNext}><img src={chevronRight} alt="" /></button> : null}
+            <p className='nb-position'>{currentIndex + 1}/{nbPictures}</p>
         </div>
     );
 };
