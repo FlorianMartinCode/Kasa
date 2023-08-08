@@ -16,7 +16,10 @@ function Full({ dataLocation }) {
                     <Tag dataLocation={logement.tags} />
                 </div>
                 <div className='content-right'>
-
+                    <div className='host'>
+                        <span className="host-name">{logement.host.name}</span>
+                        <img src = {logement.host.picture} alt = {logement.host.name} />
+                    </div>
                 </div>
             </div>
         </div>

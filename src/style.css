@@ -236,9 +236,10 @@ a .logement::before {
 }
 .full-content {
   margin: 0 5% 15px 5%;
+  display: flex;
+  justify-content: space-between;
 }
 .full-content .content-left h1 {
-  width: 60%;
   color: #ff6060;
   font-weight: 500;
   font-size: 36px;
@@ -248,6 +249,23 @@ a .logement::before {
   color: #ff6060;
   font-size: 18px;
   margin: 0 0 15px 0;
+}
+.full-content .content-right {
+  color: #ff6060;
+}
+.full-content .content-right .host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.full-content .content-right .host .host-name {
+  width: 50px;
+  align-items: center;
+}
+.full-content .content-right .host img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
 }
 
 .slide {
@@ -312,7 +330,7 @@ a .logement::before {
   justify-content: center;
   background-color: #ff6060;
   color: #fff;
-  width: 100px;
+  width: 110px;
   min-height: 25px;
   height: auto;
   border-radius: 6px;
