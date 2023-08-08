@@ -312,9 +312,11 @@ a .logement::before {
   background-color: #ff6060;
   color: #fff;
   width: 100px;
-  height: 25px;
+  min-height: 25px;
+  height: auto;
   border-radius: 6px;
   padding: 0 10px;
+  text-align: center;
   align-items: center;
 }
 
