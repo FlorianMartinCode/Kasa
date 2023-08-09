@@ -2,7 +2,7 @@ import React from 'react';
 import Slide from '../../Slide/slide';
 import Tag from '../../Tag/tag';
 import Star from '../../Star/star';
-
+import Dropdown from '../../DropDown/dropdown';
 
 function Full({ dataLocation }) {
     const logement = dataLocation;
@@ -25,6 +25,10 @@ function Full({ dataLocation }) {
                     <Star rating={logement.rating} />
                     </div>
                 </div>
+            </div>
+            <div>
+                <Dropdown titre="Description" description={logement.description} className="description-dropdown-log" />
+                <Dropdown titre="Equipements" description={logement.equipments.join('\n')} className="equipements-dropdown-log" />
             </div>
         </div>
     );

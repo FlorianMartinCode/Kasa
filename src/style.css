@@ -156,6 +156,13 @@
   padding: 15px;
   border-radius: 5px;
 }
+.dropdown .description-dropdown-log {
+  color: #FF6060;
+}
+.dropdown .equipements-dropdown-log {
+  color: #FF6060;
+  white-space: pre-line;
+}
 
 @media screen and (max-width: 1024px) {
   .dropdown-container .dropdown {
@@ -260,7 +267,7 @@ a .logement::before {
   gap: 10px;
 }
 .full-content .content-right .host .host-name {
-  width: 50px;
+  width: 40%;
   align-items: center;
 }
 .full-content .content-right .host img {
@@ -292,7 +299,6 @@ a .logement::before {
     gap: 10px;
   }
   .full-content .content-right .host .host-name {
-    width: 50px;
     align-items: center;
   }
   .full-content .content-right .host img {
