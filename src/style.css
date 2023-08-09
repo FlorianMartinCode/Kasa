@@ -399,6 +399,7 @@ a .logement::before {
 @media screen and (max-width: 1024px) {
   .tag-content {
     gap: 10px;
+    flex-wrap: wrap;
   }
   .tag-content span {
     font-size: 10px;
