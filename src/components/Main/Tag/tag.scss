@@ -16,3 +16,14 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 1024px){
+    .tag-content {
+        gap: 10px;
+
+        span {
+            font-size: 10px;
+            width: 75px;
+        }
+    }
+}

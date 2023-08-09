@@ -1,6 +1,7 @@
 import React from 'react';
 import Slide from '../../Slide/slide';
 import Tag from '../../Tag/tag';
+import Star from '../../Star/star';
 
 
 function Full({ dataLocation }) {
@@ -19,6 +20,9 @@ function Full({ dataLocation }) {
                     <div className='host'>
                         <span className="host-name">{logement.host.name}</span>
                         <img src = {logement.host.picture} alt = {logement.host.name} />
+                    </div>
+                    <div>
+                    <Star rating={logement.rating} />
                     </div>
                 </div>
             </div>

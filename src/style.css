@@ -70,18 +70,18 @@
 }
 @media screen and (max-width: 1024px) {
   .navbar a {
-    width: 145px;
+    width: 120px;
   }
   .navbar a .navbar-logo {
     display: flex;
     align-items: center;
-    width: 40%;
+    width: 100%;
   }
   .navbar a .navbar-logo img {
-    width: 145px;
+    width: 120px;
   }
   .navbar .acceuiletapropos {
-    gap: 30px;
+    gap: 25px;
     font-size: 16px;
   }
 }
@@ -256,6 +256,7 @@ a .logement::before {
 .full-content .content-right .host {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 10px;
 }
 .full-content .content-right .host .host-name {
@@ -268,6 +269,38 @@ a .logement::before {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 1024px) {
+  .full-content {
+    flex-direction: column;
+  }
+  .full-content .content-left h1 {
+    font-size: 18px;
+  }
+  .full-content .content-left p {
+    font-size: 14px;
+  }
+  .full-content .content-right {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .full-content .content-right .host {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+  }
+  .full-content .content-right .host .host-name {
+    width: 50px;
+    align-items: center;
+  }
+  .full-content .content-right .host img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+  }
+}
 .slide {
   margin: 0 5%;
   position: relative;
@@ -339,6 +372,36 @@ a .logement::before {
   align-items: center;
 }
 
+@media screen and (max-width: 1024px) {
+  .tag-content {
+    gap: 10px;
+  }
+  .tag-content span {
+    font-size: 10px;
+    width: 75px;
+  }
+}
+ul {
+  padding: 0;
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.stars-container .star img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .stars-container .star img {
+    width: 20px;
+    height: 20px;
+  }
+}
 .footer {
   background-color: black;
   height: 210px;

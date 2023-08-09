@@ -40,21 +40,21 @@
         // margin: 0 5% 0;
 
         a {
-            width: 145px;
+            width: 120px;
 
             .navbar-logo {
                 display: flex;
                 align-items: center;
-                width: 40%;
+                width: 100%;
     
                 img {
-                    width: 145px;
+                    width: 120px;
                 }
             }
         }
         
         .acceuiletapropos {
-            gap: 30px;
+            gap: 25px;
             font-size: 16px;
         }
     }

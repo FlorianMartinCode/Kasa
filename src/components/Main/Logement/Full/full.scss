@@ -24,6 +24,7 @@
         .host {
             display: flex;
             align-items: center;
+            justify-content: end;
             gap: 10px;
             
             & .host-name {
@@ -38,4 +39,47 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1024px){
+    
+    .full-content {
+        flex-direction: column;
+
+        .content-left {
+            h1 {
+                font-size: 18px;
+            }
+    
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .content-right {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-top: 10px;
+
+            .host {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                gap: 10px;
+                
+                & .host-name {
+                    width: 50px;
+                    align-items: center;
+                }
+        
+                img {
+                    width: 65px;
+                    height: 65px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+    
 }
