@@ -21,7 +21,7 @@ function Full({ dataLocation }) {
                         <span className="host-name">{logement.host.name}</span>
                         <img src = {logement.host.picture} alt = {logement.host.name} />
                     </div>
-                    <div>
+                    <div className='stars-align'>
                     <Star rating={logement.rating} />
                     </div>
                 </div>

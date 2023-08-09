@@ -313,6 +313,10 @@ a .logement::before {
     height: 65px;
     border-radius: 50%;
   }
+  .full-content .content-right .stars-align {
+    align-items: center;
+    margin: auto 0;
+  }
   .description-equipements {
     flex-direction: column;
   }
