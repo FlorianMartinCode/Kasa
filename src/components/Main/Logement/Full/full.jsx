@@ -26,9 +26,9 @@ function Full({ dataLocation }) {
                     </div>
                 </div>
             </div>
-            <div>
-                <Dropdown titre="Description" description={logement.description} className="description-dropdown-log" />
-                <Dropdown titre="Equipements" description={logement.equipments.join('\n')} className="equipements-dropdown-log" />
+            <div className='description-equipements'>
+                <Dropdown titre="Description" description={logement.description} className="description-dropdown-log"/>
+                <Dropdown titre="Equipements" description={logement.equipments.join('\n')} className="equipements-dropdown-log"/>
             </div>
         </div>
     );

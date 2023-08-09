@@ -41,6 +41,12 @@
     }
 }
 
+.description-equipements {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
 @media screen and (max-width: 1024px){
     
     .full-content {
@@ -79,5 +85,9 @@
                 }
             }
         }
+    }
+
+    .description-equipements {
+        flex-direction: column;
     }
 }

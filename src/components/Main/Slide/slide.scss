@@ -51,13 +51,18 @@
     .slide .btn {
 
         &.btn-left {
-            top: 35%;
+            top: 45%;
             left: 2%;
         }
 
         &.btn-right {
-            top: 35%;
+            top: 45%;
             right: 2%;
+        }
+
+        img {
+            width: 50%;
+            height: 50%;
         }
     }
 
