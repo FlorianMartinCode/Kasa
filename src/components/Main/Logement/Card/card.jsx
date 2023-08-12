@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-function Card ({ id,cover,title }) {
+function Card ({ dataLocation }) {
+  const logement = dataLocation;
+
   return (
-    <Link to= {`/location/${id}`} >
+    <Link to= {`/location/${logement.id}`} >
       <figure className='logement'>
-        <img className='card-img' src={cover} alt="" />
-        <figcaption className='title'>{title}</figcaption>
+        <img className='card-img' src={logement.cover} alt="" />
+        <figcaption className='title'>{logement.title}</figcaption>
       </figure>
     </Link>
   )
