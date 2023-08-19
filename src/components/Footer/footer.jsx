@@ -3,12 +3,12 @@ import logowhite from '../../assets/logo_white.png';
 
 function footer() {
   return (
-    <div className='footer'>
+    <footer className='footer'>
         <figure>
             <img src={logowhite} alt="" />
         </figure>
         <p className='copyright'>© 2020 Kasa. All rights reserved</p>
-    </div>
+    </footer>
   )
 }
 

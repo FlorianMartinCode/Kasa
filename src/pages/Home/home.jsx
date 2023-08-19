@@ -6,20 +6,18 @@ import locationDatas from '../../Data/logements.json';
 
 function Home() {
   return (
-    <div>
+    <main>
       <Banner
         imageSrc={image1}
         showText={true}
         className="image-height-1"
       />
-      <div className='logements'>
-      {locationDatas.map((location) => {
-        return <Logement key={location.id} logement={location} mode="card" />
-      }
-      )}
-      </div>
-      
-    </div>
+      <section className='logements'>
+        {locationDatas.map((location) => {
+          return <Logement key={location.id} logement={location} mode="card" />
+        })}
+      </section>
+    </main>
   );
 }
 

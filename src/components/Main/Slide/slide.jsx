@@ -23,14 +23,14 @@ const Slide = ({dataLocation}) => {
     }
 
     return (
-        <div className='slide'>
+        <section className='slide'>
             <figure className='slide-location'>
                 <img  src={dataLocation.pictures[currentIndex]} alt={dataLocation.title} />
             </figure>
             {picturesSlide ? <button className='btn btn-left' onClick={goToBack}><img src={chevronLeft} alt="" /></button> : null}
             {picturesSlide ? <button className='btn btn-right' onClick={goToNext}><img src={chevronRight} alt="" /></button> : null}
             <p className='nb-position'>{currentIndex + 1}/{nbPictures}</p>
-        </div>
+        </section>
     );
 };
 export default Slide;

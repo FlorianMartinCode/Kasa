@@ -13,9 +13,7 @@ function Location () {
         return (<Error />)
     }
     return (
-        <div>
             <Logement logement={dataLocation} mode="full"/>
-        </div>
     );
 };
 

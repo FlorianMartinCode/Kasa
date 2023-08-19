@@ -26,7 +26,7 @@ const HeaderFooter = () => {
 
 function Router() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={"/Kasa"}>
       <Routes>
         <Route path="/" element={<HeaderFooter />}>
           <Route index element={<Home />} />

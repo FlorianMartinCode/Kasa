@@ -6,19 +6,15 @@ function logement({ logement, mode }) {
 
   if (mode === "card") {
     return (
-      
-        
           <Card 
-          dataLocation={logement}
+            dataLocation={logement}
           />
     );
   } else if (mode === "full") {
     return (
-      <div>
-          <Full 
-          dataLocation={logement}
-          />
-      </div>
+      <Full 
+        dataLocation={logement}
+      />
     );
   }
 }

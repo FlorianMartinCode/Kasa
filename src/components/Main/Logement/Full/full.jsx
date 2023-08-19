@@ -8,9 +8,9 @@ function Full({ dataLocation }) {
     const logement = dataLocation;
 
     return (
-        <div>
+        <main>
             <Slide dataLocation={logement} />
-            <div className='full-content'>
+            <section className='full-content'>
                 <div className='content-left'>
                     <h1>{logement.title}</h1>
                     <p>{logement.location}</p>
@@ -25,12 +25,12 @@ function Full({ dataLocation }) {
                     <Star rating={logement.rating} />
                     </div>
                 </div>
-            </div>
-            <div className='description-equipements'>
+            </section>
+            <section className='description-equipements'>
                 <Dropdown titre="Description" description={logement.description} className="description-dropdown-log"/>
                 <Dropdown titre="Equipements" description={logement.equipments.join('\n')} className="equipements-dropdown-log"/>
-            </div>
-        </div>
+            </section>
+        </main>
     );
 }
 
