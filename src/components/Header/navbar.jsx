@@ -1,9 +1,8 @@
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.png';
 
-export class Navbar extends PureComponent {
-  render() {
+function Navbar() {
     return (
       <header className='navbar'>
         <NavLink to='/'>
@@ -17,7 +16,6 @@ export class Navbar extends PureComponent {
         </div>
       </header>
     )
-  }
 }
 
 export default Navbar

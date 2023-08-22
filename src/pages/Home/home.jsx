@@ -9,7 +9,7 @@ function Home() {
     <main>
       <Banner
         imageSrc={image1}
-        showText={true}
+        text="Chez vous, partout et ailleurs"
         className="image-height-1"
       />
       <section className='logements'>

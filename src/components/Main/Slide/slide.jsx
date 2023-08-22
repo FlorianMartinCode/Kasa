@@ -33,4 +33,5 @@ const Slide = ({dataLocation}) => {
         </section>
     );
 };
+
 export default Slide;

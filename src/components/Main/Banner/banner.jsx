@@ -1,13 +1,13 @@
 import React from 'react';
 
-function Banner({ imageSrc, showText, className }) {
+function Banner({ imageSrc, text, className}) {
   return (
     <section className={`banner ${className}`}>
       <img
         src={imageSrc}
         alt=""
       />
-      {showText && <h1 className='banner-title'>Chez vous, partout et ailleurs</h1>}
+      {text && <h1 className='banner-title'>{text}</h1>}
     </section>
   );
 }
