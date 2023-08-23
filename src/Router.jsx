@@ -14,7 +14,7 @@ import "./style.css";
 import Navbar from './components/Header/navbar';
 import Footer from './components/Footer/footer';
 
-const HeaderFooter = () => {
+function HeaderFooter() {
   return (
     <>
       <Navbar />

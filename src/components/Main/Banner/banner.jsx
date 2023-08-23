@@ -5,7 +5,7 @@ function Banner({ imageSrc, text, className}) {
     <section className={`banner ${className}`}>
       <img
         src={imageSrc}
-        alt=""
+        alt="immage banner"
       />
       {text && <h1 className='banner-title'>{text}</h1>}
     </section>

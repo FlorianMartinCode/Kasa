@@ -12,7 +12,7 @@ const Star = ({ rating }) => {
         <ul className='stars-container'>
             {stars.map((star, index) => (
                 <div className='star' key={`star-${index}`}>
-                    <img src={star} alt="" />
+                    <img src={star} alt="Star" />
                 </div>
             ))}
         </ul>
