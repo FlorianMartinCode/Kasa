@@ -26,9 +26,9 @@ function HeaderFooter() {
 
 function Router() {
   return (
-    <BrowserRouter basename={"/Kasa"}>
+    <BrowserRouter basename={"/Kasa/"}>
       <Routes>
-        <Route path="/" element={<HeaderFooter />}>
+        <Route element={<HeaderFooter />}>
           <Route index element={<Home />} />
           <Route path="location/:id" element={<Location />} />
           <Route path="about" element={<About />} />
